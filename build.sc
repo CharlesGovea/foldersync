@@ -1,6 +1,6 @@
 import mill._, scalalib._
 
-object Foldersync extends ScalaModule:
+object Foldersync extends ScalaModule {
   def scalaVersion = "3.2.0"
 
   def ivyDeps = Agg(
@@ -8,5 +8,7 @@ object Foldersync extends ScalaModule:
     ivy"com.lihaoyi::os-lib:0.8.1"
   )
 
-  object test extends Tests:
+  object test extends Tests {
     def testFrameworks = Seq("munit.Framework")
+  }
+}
